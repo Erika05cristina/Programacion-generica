@@ -64,20 +64,31 @@ public class SaquicelaJ_VillaE_Trabajo1 {
         Pollos.registrarP(4.1);
         Pollos.registrarP(3.8);
         Pollos.mostrarP();
-        
-        
-        System.out.println("\nCalculos del tamaño:\n");
+
         Calculos calculo = new Calculos();
+        System.out.println("\nCalculos del tamaño:\n");
+
         calculo.calcularPTamanoMayor(Mandarinas.getMandarinasLista(), 4);
         calculo.calcularPTamanoMayor(Naranjas.getNaranjasLista(), 10);
 //        calculo.calcularPTamanoMayor(Pollos.getPollosLista(), 4);
-       
+
         System.out.println("\nCalculos de la variedad:\n");
         calculo.calcularPVariedad(Naranjas.getNaranjasLista(), variedades.get(4));
 //        calculo.calcularPVariedad(Mandarinas.getMandarinasLista(),variedades.get(4));
 //        calculo.calcularPVariedad(Pollos.getPollosLista(), variedades.get(4));
 
+        System.out.println("\nCalculos del azucar:\n");
 
+        calculo.calcularPAzucar(Mandarinas.getMandarinasLista(), 65);
+//        calculo.calcularPAzucar(Naranjas.getNaranjasLista(), 65);
+//        calculo.calcularPAzucar(Pollos.getPollosLista(), 65);
+
+        System.out.println("\nCalculos del peso del pollo:\n");
+
+//        calculo.calcularPPeso(Mandarinas.getMandarinasLista(), 3.0);
+//        calculo.calcularPPeso(Naranjas.getNaranjasLista(), 3.0);
+        calculo.calcularPPeso(Pollos.getPollosLista(), 4.0);
+        calculo.calcularPPeso(Animal.getAnimalLista(), 3.0);
 
     }
 
